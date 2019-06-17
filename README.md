@@ -30,6 +30,7 @@ Apply Q-Learning on to the data, train the agent to recognize clapping.
 
 * Agents remembers previous moves
 * Give reward for each action according to the frame number and do training at the end
+
 ``` rewards.append([[frame], [self.env.scaling_factor * pow(self.discount,self.env.max_frame - frame)*reward]]) ```
 
 * Gamma (discount) = 0.95
