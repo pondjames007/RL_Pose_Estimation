@@ -34,6 +34,7 @@ Apply Q-Learning on to the data, train the agent to recognize clapping.
 ``` rewards.append([[frame], [self.env.scaling_factor * pow(self.discount,self.env.max_frame - frame)*reward]]) ```
 
 * Gamma (discount) = 0.95
+* Training
 ```
     def replay(self, batch_size):
         inputs, targets, rewards= self._prep_batch(batch_size)
